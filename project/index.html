@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <title>Finsegg</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Finance data, Finance data analysis">
+        <meta name="description" content="Financial data analyser">
+        <link rel="stylesheet"  href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script defer src="script1.js"></script>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="heading">
+                <h1>Financial Statement Data</h1>
+            </div>
+            <form action="result.php" method="post" class="form" id="form">
+                <div class="element">
+                    <label class="important finance-label">WCT</label>
+                   
+                       <input id="wct"  type="text" placeholder="WCT" autocomplete="off" name="wct"/>
+                       <select id="wct-currency" name="wct-currency" class="currency">
+                          <option value="k">K</option>
+                          <option value="l">L</option>
+                          <option value="cr">Cr</option>
+                       </select>
+                  
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="element">
+                  <label class="important finance-label">Inventory Turnover Ratio:</label>
+                  <input id="itr"  type="text" placeholder="ITR" autocomplete="off" name="itr"/>
+                  <select id="itr-currency" name="itr-currency" class="currency">
+                    <option value="k">K</option>
+                    <option value="l">L</option>
+                    <option value="cr">Cr</option>
+                  </select>
+                  <i class="fa fa-exclamation-circle"></i>
+                  <small>Error message</small>
+                </div>
+                 <div class="element">
+                  <label class="important finance-label"> Turnover Ratio:</label>
+                  <input id="tr" type="text" placeholder="TR" autocomplete="off" name="tr"/>
+                  <select id="tr-currency" name="tr-currency" class="currency">
+                    <option value="k">K</option>
+                    <option value="l">L</option>
+                    <option value="cr">Cr</option>
+                  </select>
+                  <i class="fa fa-exclamation-circle"></i>
+                  <small>Error message</small>
+                </div>
+                <div class="element">
+                    <label class="important finance-label"> Turnover Ratio:</label>
+                    <input id="tr" type="text" placeholder="TR" autocomplete="off"/>
+                    <select id="tr-currency" name="tr-currency" class="currency">
+                      <option value="k">K</option>
+                      <option value="l">L</option>
+                      <option value="cr">Cr</option>
+                    </select>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                  </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        
+    </body>
+</html>
